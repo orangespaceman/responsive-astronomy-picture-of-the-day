@@ -38,7 +38,7 @@ class ApodrTranslations extends Translations {
     public $header = '
       <ul class="credit">
         <li><a href="http://apod.nasa.gov/apod/">View original</a></li>
-        <li><a href="http://petegoodman.com/labs/responsive-astronomy-picture-of-the-day/">Back to lab</a></li>
+        <li><a href="https://f90.co.uk/labs/responsive-astronomy-picture-of-the-day/">Back to lab</a></li>
       </ul>
     ';
 
@@ -90,7 +90,7 @@ class ApodrTranslations extends Translations {
         $description = substr($text, 0, strrpos($text, ": "));
 
         // update tweet with new URL
-        $text = $description . ": http://labs.petegoodman.com/apodr/pages/".$date.".html";
+        $text = $description . ": ".$date.".html";
         $context->debug('<p>Additional munging: ' . $text . '</p>');
         return $text;
     }
